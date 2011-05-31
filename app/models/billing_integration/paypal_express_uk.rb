@@ -6,7 +6,7 @@ class BillingIntegration::PaypalExpressUk < BillingIntegration
   preference :no_shipping, :boolean, :default => false
 
   def provider_class
-    ActiveMerchant::Billing::PaypalExpressUkGateway
+    ActiveMerchant::Billing::PayflowExpressUkGateway
   end
 
 end
