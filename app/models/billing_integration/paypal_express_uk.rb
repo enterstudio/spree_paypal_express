@@ -1,8 +1,7 @@
 class BillingIntegration::PaypalExpressUk < BillingIntegration
   preference :login, :string
-  preference :user, :string
-  preference :vendor, :string
-  preference :password, :string
+  preference :password, :password
+  preference :signature, :string
   preference :review, :boolean, :default => false
   preference :no_shipping, :boolean, :default => false
 
